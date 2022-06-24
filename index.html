@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <script src="https://kit.fontawesome.com/6994eff3ce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">I AM <br> JOVAN RAI</h1>
+            <div class="social_list">
+                <a href="https://github.com/1zJAR" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jovan-rai/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.twitch.tv/1zjar_" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitch"></i></a>
+                <a href="https://discord.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://twitter.com/1z_jar" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+
+            </div>
+        </div>
+
+        
+        
+    </section>
+
+    <section id="about">
+        <h1 class="headings">ABOUT ME</h1>
+        <div id="picture">
+            <img src="jovan_picture/profile_picture.jpg">
+            <div class="intro">
+                <p>Hello everyone my name is Jovan, and I am from British Columbia Canada.
+                <br>
+                I learned to code as a hobby since high school years.
+                <br>
+                Some programming languages I am learning are JavaScript, Java, HTML, and CSS. 
+                <br> 
+                I have completed C and Java durring my university/college years.</p>
+                <br>
+                <p id="question">What do you hate about programining?</p>
+                <p class="answer">Linked list/Nodes and pointers. Because pointers can get messy and confusing.</p><br>
+
+                <p id="question">How do solve coding problems?</p>
+                <p class="answer">Well I like to use this common method which is: Code, complie and run. 
+                In other words, try it and <br> if it fails try again else resort to online resources such as Stack Overflow or other fourms.</p><br>
+
+                <p id="question">What do you like to do in your spare time?</p>
+                <p class="answer">I like to build stuff, code (Ex. discord bots), and play games.</p><br>
+
+                <p id="question">What current intrest?</p>
+                <p class="answer">My current intrest are crypto/crypto blockchain, computers
+                <br> and renewable energy production such as solar system.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <!-- headding -->
+        <div class="project_heading">
+            <span>Let's See My Work</span>
+            <h3>My Projects</h3>
+        </div>
+        <!-- filter section -->
+        <ul class="project_filter">
+            <li class="list project_filter_active" data-filter="all">All</li>
+            <li class="list" data-filter="cad_design">AutoCAD Desgin</li>
+            <li class="list" data-filter="constructed_project">Constructed Projects</li>
+            <li class="list" data-filter="coding">Coding</li>
+        </ul>
+
+        <div class="project_container">
+            <!-- box 1 -->
+            <a href="projects_pictures/DroneCAD.png" class="project_box cad_design" data-lightbox="work">
+                <img src="projects_pictures/DroneCAD.png" alt="work">
+            </a>
+
+            <!-- box 2 -->
+            <a href="projects_pictures/DronePic.jpg" class="project_box constructed_project" data-lightbox="work">
+                <img src="projects_pictures/DronePic.jpg" alt="work">
+            </a>
+
+            <!-- box 3 -->
+            <a href="projects_pictures/GTX1660SuperRig.jpg" class="project_box constructed_project" data-lightbox="work">
+                <img src="projects_pictures/GTX1660SuperRig.jpg" alt="work">
+            </a>
+
+            <!-- box 4 -->
+            <a href="projects_pictures/homemade_generator.jpg" class="project_box constructed_project" data-lightbox="work">
+                <img src="projects_pictures/homemade_generator.jpg" alt="work">
+            </a>
+
+            <!-- box 5 -->
+            <a href="projects_pictures/rocket_nozzel.jpg" class="project_box constructed_project" data-lightbox="work">
+                <img src="projects_pictures/rocket_nozzel.jpg" alt="work">
+            </a>
+
+            <!-- box 6 -->
+            <a href="projects_pictures/nodeJS.jpeg" class="project_box coding" data-lightbox="work">
+                <img src="projects_pictures/nodeJS.jpeg" alt="work">
+            </a>
+
+            <!-- box 7 -->
+            <a href="projects_pictures/nodeJS.jpeg" class="project_box coding" data-lightbox="work">
+                <img src="projects_pictures/nodeJS.jpeg" alt="work">
+            </a>
+
+            <!-- box 8 -->
+            <a href="projects_pictures/html5.jpeg" class="project_box coding" data-lightbox="work">
+                <img src="projects_pictures/html5.jpeg" alt="work">
+            </a>
+
+        </div>
+
+    </section>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script src="lightbox.js"></script>
+
+    <script type="text/javascript">
+        $(document).on('click', '.project_filter li', function(){
+            $(this).addClass('project_filter_active').siblings().removeClass('project_filter_active')
+        })
+
+        $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if(value == 'all'){
+                    $('.project_box').show('1000');
+                }
+                else{
+                    $('.project_box').not('.'+value).hide('1000');
+                    $('.project_box').filter('.'+value).show('1000');
+                }
+            })
+        })
+    </script>
+    
+</body>
+</html>
