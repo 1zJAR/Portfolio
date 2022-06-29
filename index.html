@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jovan Rai</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="lightbox.css">
+    <link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6994eff3ce.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,24 +17,22 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#">Resume</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     
     <section id="home">
-        <div class="main">
+        <div class="main" data-aos="fade-in">
             <h1 class="headings">I AM <br> JOVAN RAI</h1>
             <div class="social_list">
                 <a href="https://github.com/1zJAR" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/jovan-rai/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://www.twitch.tv/1zjar_" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitch"></i></a>
-                <a href="https://discord.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
                 <a href="https://twitter.com/1z_jar" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
 
             </div>
         </div>
-
-        
         
     </section>
 
@@ -86,6 +85,7 @@
             <!-- box 1 -->
             <a href="projects_pictures/DroneCAD.png" class="project_box cad_design" data-lightbox="work">
                 <img src="projects_pictures/DroneCAD.png" alt="work">
+                <p id="project_description">Racing Drone CAD Design</p>
             </a>
 
             <!-- box 2 -->
@@ -124,6 +124,96 @@
             </a>
 
         </div>
+
+    </section>
+
+    <section id="resume" class="resume">
+        <div class="container">
+
+            <div class="section-title">
+              <h2>Resume</h2>
+              <br>
+            </div>
+    
+            <div class="row">
+              <div class="col-lg-6" data-aos="fade-up">
+                <h3 class="resume-title">Sumary</h3>
+                <div class="resume-item pb-0">
+                    <h4>Jovan Rai</h4>
+                    <p><em>I am a second-year bachelor of science in engineering student at the University of Victoria. Experience with industrial automation and control system on wastewater management/treatment plant.
+                    </em></p>
+                    <br>
+                    <ul>
+                        <li>Canada, British Columbia</li>
+                        <li>jovanrai@hotmail.com</li>
+                    </ul>
+                </div>
+    
+                <h3 class="resume-title">Education</h3>
+                <div class="resume-item">
+                  <h4>Bachelor of Engineering (B.ENG)</h4>
+                  <h5>September 2020 - Present</h5>
+                  <p><em>University of Victoria, Victoria, BC</em></p>
+                  <p>Relevant Courses:</p>
+                  <ul>
+                    <li><b>CSC – 111:</b> Learned computational problem 
+                        solving and programming in C. Topics includes: 
+                        C development, pointers and memory 
+                        management, data representation, data structures, 
+                        iterative design, control flow, development 
+                        environments and algorithms.
+                        </li>
+                    <li><b>CSC – 115:</b> Learning object-oriented programing 
+                        s, recursion in Java. Topics include: abstract data
+                        type and data structures, recursion,
+                        implementation of lists including both sequential 
+                        (linked) and random access (arrays).</li>
+                    <li><b>ENGR – 110:</b> Learned principles of engineering 
+                        design process and worked on a design team with 
+                        a plan to repurpose pipelines over the 2020-2030 
+                        period to achieve net-zero energy system in 
+                        British Columbia.</li>
+                    <li><b>ENGR – 120:</b> Was a lead mechanical control 
+                        system and programmer for an autonomous 
+                        prototype robot capable of detecting high touch 
+                        area which represents the contaminated area and 
+                        disinfecting the high touch area through the use 
+                        of radiation. Gained experience in C programing, 
+                        mechatronics and CAD drawings.</li>
+                  </ul>
+                </div>
+                
+              </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="resume-title">Professional Experience</h3>
+                <div class="resume-item">
+                    <h4>Co-Op Engineering</h4>
+                    <h5>September 2021 - December 2021</h5>
+                    <p><em>Pacific Coast Terminal (PCT), Port Moody, BC</em></p>
+                    <ul>
+                      <li>Development and execution of project work for new and existing equipment.</li>
+                      <li>Supervise all works in progress and ensure compliance with PCT’s quality and safety policies</li>
+                      <li>Work with both outside contractors and the unionized workforce to complete projects and significant repair projects.</li>
+                      <li>Work with industrial automation and control system (HMI) on wastewater management/treatment plant.</li>
+                      <li>Oversee the Glycol Slop Tank (UT) inspection for shiploader berths.</li>
+                    </ul>
+                  </div>
+                <div class="resume-item">
+                  <h4>Automotive Service Technician</h4>
+                  <h5>June 2019 - August 2020</h5>
+                  <p><em>Walmart (Tire &amp; Lube Express), Duncan, BC</em></p>
+                  <ul>
+                    <li> Performed maintenance services including oil changes, fuel system service, grease ball joints and battery service.</li>
+                    <li> Removed, replaced, repaired, balanced and rotated new or used tires to meet internal and regulated expectations governing safety.</li>
+                    <li> Completed daily safety inspection and maintenance for all tools and equipment’s including air-compressor, tire machine, tire balancer machine, and vehicle hoists.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="contact">
 
     </section>
 
