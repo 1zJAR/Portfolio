@@ -1,10 +1,18 @@
+/**
+* Date Updated: 2022-06-28
+* Author: Jovan Rai
+*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Navbar */
+/*--------------------------------------------------------------
+# Navbar Section
+--------------------------------------------------------------*/
+
 .navbar{
     display: flex;
     justify-content: center;
@@ -39,7 +47,10 @@
     box-shadow: 0 0 10px white;
 }
 
-/* Home Section */
+/*--------------------------------------------------------------
+# Home Section
+--------------------------------------------------------------*/
+
 #home{
     display: flex;
     flex-direction: column;
@@ -78,7 +89,9 @@
     margin: 40px 0px;
 }
 
-/* Social Links*/
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
 
 .social_list{
     padding: 15px;
@@ -108,7 +121,10 @@
     transition: background-color 0.6s ease-out, color 0.6s ease-out;
   }
 
-/* About Section*/
+  /*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
 #about{
     display: flex;
     flex-direction: column;
@@ -146,13 +162,14 @@
     font-style: italic;
 }
 
-/* Project Section*/
+/*--------------------------------------------------------------
+# Project Section
+--------------------------------------------------------------*/
 
 #projects{
     background-color: rgba(0, 0, 0, 0.5);
     height: auto;
     color: white;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,4 +243,66 @@
     height: 100%;
     overflow: hidden;
     border-radius: 5px;
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+  }
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+  }
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+  }
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f5297;
+  }
+
+ /* Contact Section*/
+#contact{
+    background-color: darkgray;
+    height: 100px;
+    
 }
