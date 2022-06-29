@@ -302,7 +302,8 @@
 
  /* Contact Section*/
 #contact{
-    background-color: darkgray;
-    height: 100px;
+    background-color: grey;
+    height: auto;
+    padding: auto;
     
 }
